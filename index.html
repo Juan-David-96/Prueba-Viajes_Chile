@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Chile</title>
+    <!-- Favicon -->
+    <link rel="icon" type="png" href="assets/img/Icono-pagina.png">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/2fa129e4dd.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navegacion">
+            <div class="container">
+                <a class="navbar-brand navegacion-texto" href="index.html">
+                    <img class="imagen-nav" src="assets/img/Icono-pagina.png" alt="">  Viajes Chile
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link d-flex align-items-center" href="index.html">
+                                <p class="navegacion-texto m-0">Inicio</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <p class="navegacion-texto m-0">Quienes Somos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <p class="navegacion-texto m-0">Destacados</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <p class="navegacion-texto m-0">Contacto</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <!-- Carrusel -->
+        <!-- Ajustamos el cambio de las imagenes para que sean cada 5 seg con el data-interval-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/img/Carrusel-1.jpg" alt="Primera imagen">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/Carrusel-2.jpg" alt="Segunda imagen">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/Carrusel-3.jpg" alt="Tercera imagen">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/Carrusel-4.webp" alt="Cuarta imagen">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/img/Carrusel-5.jpg" alt="Quinta imagen">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+    </header>
+    <!-- Dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

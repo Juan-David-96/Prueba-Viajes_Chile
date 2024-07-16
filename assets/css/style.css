@@ -1,0 +1,53 @@
+:root {
+    --fuentePrincipal:"Open Sans", sans-serif;
+    --negro: #000000;
+    --blanco: #fff;
+    --gris: #888;
+}
+
+/* Globales */
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--negro);
+}
+/* Header */
+/* Navegador */
+.navbar.bg-light {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Fondo con opacidad */
+    backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
+}
+.imagen-nav {
+    max-width: 30px;
+}
+.navegacion-texto {
+    font-size: 20px;
+    transition: font-weight 0.5s ease;
+}
+.navegacion-texto:hover {
+    font-weight: bold; /* Texto en negrita al pasar el cursor */
+}
+/* Carrusel */
+.carousel-item img {
+    max-width: 100%;
+    height: 850px;
+    object-fit: cover;
+  }
+  /* Botones interactivos Carrusel */
+.carousel-indicators {
+    bottom: 10px;
+    /* Asegura que estén por encima del contenido del carrusel */
+    z-index: 15;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--blanco); /* Color de fondo de los indicadores inactivos */
+    margin: 0 5px; /* Espacio entre cada indicador */
+    border-radius: 50%; /* Forma redondeada */
+    cursor: pointer;
+}
+.carousel-indicators .active {
+    background-color: var(--gris); /* Color de fondo del indicador activo */
+}
+/* Ajustes moviles */
