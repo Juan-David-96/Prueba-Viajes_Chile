@@ -3,18 +3,20 @@
     --negro: #000000;
     --blanco: #fff;
     --gris: #888;
+    --turquesa: #00CED1;
 }
 
 /* Globales */
 body {
     font-family: var(--fuentePrincipal);
-    background-color: var(--negro);
+    background-color: var(--negro) !important;
+    color: var(--blanco) !important;
 }
 /* Header */
 /* Navegador */
 .navbar.bg-light {
-    background-color: rgba(255, 255, 255, 0.1) !important; /* Fondo con opacidad */
-    backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo */
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
 }
 .imagen-nav {
     max-width: 30px;
@@ -24,7 +26,7 @@ body {
     transition: font-weight 0.5s ease;
 }
 .navegacion-texto:hover {
-    font-weight: bold; /* Texto en negrita al pasar el cursor */
+    font-weight: bold;
 }
 /* Carrusel */
 .carousel-item img {
@@ -51,3 +53,16 @@ body {
     background-color: var(--gris); /* Color de fondo del indicador activo */
 }
 /* Ajustes moviles */
+/* Quienes Somos */
+.quienes-somos {
+    
+}
+.quienes-somos h2{
+    margin: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gris);
+}
+.quienes-somos-icono {
+    font-size: 20px;
+    background-color: var(--turquesa);
+}
