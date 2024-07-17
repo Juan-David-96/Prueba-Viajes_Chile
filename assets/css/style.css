@@ -12,16 +12,22 @@ body {
     background-color: var(--negro) !important;
     color: var(--blanco) !important;
 }
+/* Incluye titulos de la seccion "¿QUIENES SOMOS?","DESTACADOS" */
+.titulo-secciones {
+    margin: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gris);
+}
 /* Header */
 /* Navegador */
-.navbar.bg-light {
+.navbar.bg-light { /*Transparencia del nav */
     background-color: rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(10px);
 }
 .imagen-nav {
     max-width: 30px;
 }
-.navegacion-texto {
+.navegacion-texto { /*Negrita cuando se para por encima */
     font-size: 20px;
     transition: font-weight 0.5s ease;
 }
@@ -34,35 +40,37 @@ body {
     height: 850px;
     object-fit: cover;
   }
-  /* Botones interactivos Carrusel */
+/* Botones interactivos Carrusel */
 .carousel-indicators {
     bottom: 10px;
-    /* Asegura que estén por encima del contenido del carrusel */
-    z-index: 15;
+    z-index: 15; /* Asegura que estén por encima del contenido del carrusel */
 }
 .carousel-indicators li {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: var(--blanco); /* Color de fondo de los indicadores inactivos */
-    margin: 0 5px; /* Espacio entre cada indicador */
-    border-radius: 50%; /* Forma redondeada */
+    background-color: var(--blanco);
+    margin: 0 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
-.carousel-indicators .active {
-    background-color: var(--gris); /* Color de fondo del indicador activo */
+.carousel-indicators .active { /* Color de fondo del indicador activo */
+    background-color: var(--gris);
 }
 /* Ajustes moviles */
 /* Quienes Somos */
-.quienes-somos {
-    
-}
-.quienes-somos h2{
-    margin: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--gris);
-}
 .quienes-somos-icono {
-    font-size: 20px;
+    font-size: 25px;
     background-color: var(--turquesa);
+}
+/* Destacados */
+.destacados-carta-texto {
+    background-color: var(--turquesa);
+    color: var(--blanco) !important;
+}
+/* Ajustes moviles */
+@media (max-width: 768px) {
+.destacados-carta {
+    margin: 15px;
+}
 }
