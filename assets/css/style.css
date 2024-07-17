@@ -64,13 +64,23 @@ body {
     background-color: var(--turquesa);
 }
 /* Destacados */
+.destacados-carta {
+    margin-bottom: 20px;
+}
 .destacados-carta-texto {
     background-color: var(--turquesa);
     color: var(--blanco) !important;
+    border-bottom-left-radius: 5px; /*Borde en la parte inferior del parrafo para que coincida con la forma de la tarjeta */
+    border-bottom-right-radius: 5px;
 }
 /* Ajustes moviles */
-@media (max-width: 768px) {
-.destacados-carta {
-    margin: 15px;
+/* Contacto */
+.contacto-label {
+    padding: 10px 0;
 }
+.contacto-input {
+    padding: 10px 0;
+}
+.contacto-boton {
+    margin-top: 20px;
 }
