@@ -19,6 +19,9 @@ body {
     border-bottom: 1px solid var(--gris);
 }
 /* Header */
+.header {
+    margin-bottom: 15px ;
+}
 /* Navegador */
 .navbar.bg-light { /*Transparencia del nav */
     background-color: rgba(255, 255, 255, 0.1) !important;
@@ -83,4 +86,26 @@ body {
 }
 .contacto-boton {
     margin-top: 20px;
+    background-color: var(--turquesa) !important;
+}
+/* Footer */
+.footer {
+    margin-top: 20px;
+    background-color: var(--turquesa);
+    padding: 20px;
+    text-align: center;
+}
+.footer-contenido {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-contenido p {
+
+    margin: 0;
+}
+.footer-contenido-redes i {
+    margin: 0 5px;
+    font-size: 25px;
 }
