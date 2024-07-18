@@ -44,17 +44,17 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">
+                            <a class="nav-link d-flex align-items-center" href="#quienes-somos">
                                 <p class="navegacion-texto m-0">Quienes Somos</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">
+                            <a class="nav-link d-flex align-items-center" href="#destacados">
                                 <p class="navegacion-texto m-0">Destacados</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center" href="#">
+                            <a class="nav-link d-flex align-items-center" href="#contacto">
                                 <p class="navegacion-texto m-0">Contacto</p>
                             </a>
                         </li>
@@ -99,8 +99,9 @@
             </a>
     </header>
     <!-- ¿QUIÉNES SOMOS? -->
-    <div class="container">
+    <div id="quienes-somos" class="container">
         <div class="row">
+            <!-- Las clases d-none y d-md-block hacen que la seccion se muestre solo en dispositivos medianos en adelante -->
             <h2 class="d-none d-md-block text-center titulo-secciones">¿QUIÉNES SOMOS?</h2>
             <div class="col-md-4 d-none d-md-block">
                 <div>
@@ -144,13 +145,13 @@
         </div>
     </div>
     <!-- Destacados -->
-    <div class="container">
+    <div id="destacados" class="container">
         <h2 class="text-center titulo-secciones">DESTACADOS</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 destacados-carta">
                     <div class="card">
-                        <img src="assets/img/Tarjeta-1.jpg" class="card-img-top" alt="Imagen 1">
+                        <img src="assets/img/Tarjeta-1.jpg" class="card-img-top destacados-carta-img" alt="Imagen 1">
                         <div class="card-body destacados-carta-texto">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                                 adipisci excepturi ea eaque nihil consequatur delectus veniam cumque aut perferendis
@@ -160,7 +161,7 @@
                 </div>
                 <div class="col-md-3 destacados-carta">
                     <div class="card">
-                        <img src="assets/img/Tarjeta-2.jpg" class="card-img-top" alt="Imagen 2">
+                        <img src="assets/img/Tarjeta-2.jpg" class="card-img-top destacados-carta-img" alt="Imagen 2">
                         <div class="card-body destacados-carta-texto">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                                 adipisci excepturi ea eaque nihil consequatur delectus veniam cumque aut perferendis
@@ -170,7 +171,7 @@
                 </div>
                 <div class="col-md-3 destacados-carta">
                     <div class="card">
-                        <img src="assets/img/Tarjeta-3.jpg" class="card-img-top" alt="Imagen 3">
+                        <img src="assets/img/Tarjeta-3.jpg" class="card-img-top destacados-carta-img" alt="Imagen 3">
                         <div class="card-body destacados-carta-texto">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                                 adipisci excepturi ea eaque nihil consequatur delectus veniam cumque aut perferendis
@@ -180,7 +181,7 @@
                 </div>
                 <div class="col-md-3 destacados-carta">
                     <div class="card">
-                        <img src="assets/img/Tarjeta-4.jpg" class="card-img-top" alt="Imagen 4">
+                        <img src="assets/img/Tarjeta-4.jpg" class="card-img-top destacados-carta-img" alt="Imagen 4">
                         <div class="card-body destacados-carta-texto">
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                                 adipisci excepturi ea eaque nihil consequatur delectus veniam cumque aut perferendis
@@ -192,7 +193,7 @@
         </div>
     </div>
     <!-- Contacto -->
-    <div class="container">
+    <div id="contacto" class="container">
         <h2 class="text-center titulo-secciones">CONTACTO</h2>
         <div class="container">
             <form>
@@ -200,15 +201,18 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label class="contacto-label" for="nombre">Nombre</label>
-                            <input type="text" class="form-control contacto-input" id="nombre" name="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control contacto-input" id="nombre" name="nombre"
+                                placeholder="Nombre">
                         </div>
                         <div class="form-group">
                             <label class="contacto-label" for="asunto">Asunto</label>
-                            <input type="text" class="form-control contacto-input" id="asunto" name="asunto" placeholder="Asunto">
+                            <input type="text" class="form-control contacto-input" id="asunto" name="asunto"
+                                placeholder="Asunto">
                         </div>
                         <div class="form-group">
                             <label class="contacto-label" for="mensaje">Mensaje</label>
-                            <textarea class="form-control contacto-input" id="mensaje" name="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                            <textarea class="form-control contacto-input" id="mensaje" name="mensaje" rows="3"
+                                placeholder="Mensaje"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary float-md-left contacto-boton">Enviar</button>
                     </div>
@@ -220,7 +224,7 @@
     <footer class="footer">
         <div class="footer-contenido">
             <p class="text-start">VIAJES CHILE</p>
-            <div class="text-end footer-contenido-redes">
+            <div class="footer-contenido-redes">
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-twitter"></i>
